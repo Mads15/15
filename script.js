@@ -6,5 +6,6 @@ InputButton.addEventListener("click", () => {
     console.log(InputBox.value);
 
     const DisplayBox = document.querySelector("#DisplayBox");
-    console.log(DisplayBox);
+    console.log(DisplayBox.value);
+
 });
