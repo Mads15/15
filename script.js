@@ -1,11 +1,19 @@
-const InputBox = document.querySelector("#InputBox");
-console.log(InputBox.value);
+const SubmitValue = document.querySelector("#SubmitValue");
+console.log(SubmitValue.value);
 
-const InputButton = document.querySelector("#InputButton");
-InputButton.addEventListener("click", () => {
-    console.log(InputBox.value);
+SubmitValue.addEventListener("click", () => {
+    const InputValue = document.querySelector("#InputValue").value;
+    console.log(InputValue.value);
 
-    const DisplayBox = document.querySelector("#DisplayBox");
-    console.log(DisplayBox.value);
+    const DisplayValue = document.querySelector("#DisplayValue");
+    console.log(DisplayValue.value);
+
+    DisplayValue.textContent = InputValue;
+
+    const FromValue = document.querySelector("#FromValue").value;
+    console.log(FromValue.value);
+
+    const ToValue = document.querySelector("#ToValue").value;
+    console.log(ToValue.value);
 
 });
