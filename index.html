@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en">
   <head>
     <title>Home</title>
     <meta charset="UTF-8" />
@@ -11,26 +11,37 @@
   <body>
     <form>
 
+      <p>Convert</p>
+
       <input id="InputValue" type="text">
 
-      <label for="FromValue">Konventer fra
+      <label for="FromValue">
           <select name="FromValue" id="FromValue">
-          <option value="CM">CM</option>
-          <option value="M">M</option>
-          <option value="KM">KM</option>
+            <option value="CM">Centimeter</option>
+            <option value="M">Meter</option>
+            <option value="KM">Kilometer</option>
+            <option value="IN">Inch</option>
+            <option value="FT">Feet</option>
+            <option value="MI">Miles</option>
         </select>
       </label>
 
-      <label for="ToValue">Konventer til
+      <p>to</p>
+
+      <label for="ToValue">
           <select name="ToValue" id="ToValue">
-          <option value="CM">CM</option>
-          <option value="M">M</option>
-          <option value="KM">KM</option>
+            <option value="CM">Centimeter</option>
+            <option value="M">Meter</option>
+            <option value="KM">Kilometer</option>
+            <option value="IN">Inch</option>
+            <option value="FT">Feet</option>
+            <option value="MI">Miles</option>
         </select>
       </label>
 
     </form>
       <button id="SubmitValue">Run</button>
-      <p id="DisplayValue"></p>
+      <div id="InputValue"></div>
+      <div id="DisplayValue"></div>
   </body>
 </html>
