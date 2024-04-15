@@ -12,6 +12,11 @@ SubmitValue.addEventListener("click", () => {
     const ToValue = document.querySelector("#ToValue").value;
     console.log(ToValue);
 
+    if (isNaN(Number(InputValue))) {
+        DisplayValue.textContent = "This only works with numbers";
+        return;
+    } 
+
     let result;
 
     if (FromValue === "CM" && ToValue === "M") {
@@ -93,10 +98,8 @@ SubmitValue.addEventListener("click", () => {
     } else if (FromValue === "MI" && ToValue === "MI") {
     result = InputValue;   
     
-
-    
     } else {
-        result = "no";
+
     }
     
     DisplayValue.textContent = InputValue + " " + FromValue + " is " + result + " " + ToValue;
